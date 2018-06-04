@@ -1,0 +1,376 @@
+body {
+  width: 100%;
+  height: 220vh;
+  display: grid;
+  grid-template: 4% 13% 23% 60% / 15% 55% 30%;
+  background-color: #EAF0F5;
+  font-family: 'Roboto';
+}
+
+/*//* -------Side navigation section stylings---------*/
+
+.side-nav {
+  grid-area: 1 / 1 / 5 / 2;
+  background-color: #2F3848;
+  display: grid;
+  grid-template: 17% 17% 17% 49% / 100%;
+}
+
+.moby-photo-area {
+  grid-area: 1 / 1 / 2 / 2;
+  border-bottom: 8px solid #2B3444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #e0e0e0;
+}
+
+.moby-photo {
+  background-image: url("https://a2-images.myspacecdn.com/images03/4/8705990e22fb466c81068d7fcef03ae9/600x600.jpg");
+  height: 7rem;
+  width: 7rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-bottom: 10%;
+}
+
+.side-nav ul {
+  list-style: none;
+  color: #a9b2c2;
+  margin-left: -1.3rem;
+}
+
+.side-nav img {
+  width: 1.2rem;
+  margin: 0 .8rem 0 .8rem;
+}
+
+.side-nav .sort-down {
+  width: .7rem;
+}
+
+.side-nav .sort-down:hover {
+  cursor: pointer;
+}
+
+.side-nav li {
+  margin: 1.6rem 0 0 0;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.side-nav li:hover {
+  background-color: #303848;
+  color: #E4E7EC;
+  cursor: pointer;
+}
+
+aside h5 {
+  color: #5D6879;
+  margin-left: 2.0em;
+}
+
+.side-nav aside {
+  border-bottom: 8px solid #2D3443;
+}
+
+.main-aside {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.admin-aside {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.categories-aside {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.side-nav div {
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+}
+
+/*----------search area section styling-----------*/
+
+.search-area {
+  background-color: #FEFEFE;
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  /*height: 10%;*/
+
+}
+
+.search-bar {
+  width: 80%;
+  height: 100%;
+  background-image: url('images/magnifier.svg');
+  background-size: 2%;
+  background-repeat: no-repeat;
+  background-position: center left 2%;
+  padding-left: 4%;
+  font-size: 1.2rem;
+}
+
+.search-area article {
+  border: 1px solid #C5C5C5;
+  height: 100%;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-area article:hover {
+  background-color: #129BFA;
+}
+
+.search-area img {
+  width: 30%;
+}
+
+/*---------------tabs navigation stylings---------------*/
+
+.tab-nav-section {
+  background-color: #FFFFFF;
+  grid-area: 2 / 2 / 3 / 4;
+  padding-left: 4%;
+  border-top: 1px solid #C5C5C5;
+}
+
+.tab-nav-section button {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.tab-nav-section i {
+  font-size: 1rem;
+}
+
+.tab-nav-section #fas {
+  color: #87b948;
+  font-size: 5%;
+  margin-right: .2rem;
+
+}
+
+.tab-nav-section .open-button {
+  border: 1px solid;
+  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+  padding-left: 3%;
+  width: 6rem;
+  height: 2.5rem;
+  padding-right: 3%;
+  font-size: .8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab-nav-section .location-icon {
+  width: 1.5%;
+}
+
+.tab-nav-section a {
+  margin-left: 1%;
+  color: #69BDFF;
+}
+
+.tab-nav-section aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-top: -5%;
+  width: 30%;
+  float: right;
+}
+
+.tab-nav-section article {
+  margin-right: 2%;
+  font-size: 1.1rem;
+}
+
+.tab-nav-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 90%;
+  margin-top: 5.7rem;
+  margin-left: -3rem;
+  width: 80%;
+  color: #BABCC1;
+}
+
+.tab-nav-section li {
+  height: 2rem;
+}
+
+.tab-nav-section li:hover {
+  border-bottom: 3px solid #5EAFED;
+  cursor: pointer;
+  color: black;
+}
+
+.tab-nav-section p {
+  color: #8a8b8e;
+}
+
+/*-----------graph section stylings-------------------*/
+
+.graph-image-section {
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: #EEF2F7;
+}
+
+/*--------------Job section stylings-------------------*/
+
+.job-section {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: #FCFCFC;
+  width: 85%;
+  height: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-section header {
+  width: 90%;
+  height: 10%;
+  background-color: #64738A;
+  padding-left: 10%;
+  align-self: flex-start;
+  color: #FFFFFF;
+  font-size: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.job-section button {
+  margin-left: 4%;
+  font-size: 1rem;
+  padding-left: 3%;
+  padding-top: 1%;
+  height: 26%;
+  width: 13%;
+  background-color: #70809B;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("images/edit.svg");
+  background-size: 22%;
+  background-repeat: no-repeat;
+  background-position: center left 7%;
+}
+
+.job-section section {
+  height: 9%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-left: 5%;
+
+}
+
+.job-section .description-section {
+  height: 18%;
+  padding-left: 5%;
+}
+
+.job-section h2 {
+  font-size: 1rem;
+}
+
+.description-section h2 {
+  margin-right: 13%;
+}
+
+.job-section hr {
+  color: #d6d6d6;
+  width: 90%;
+}
+
+.job-section p {
+  font-size: .79rem;
+}
+
+.customer-service-p-tag {
+  margin-right: 32%;
+}
+
+.san-fran-p-tag {
+  margin-right: 47%;
+}
+
+.full-time-p-tag {
+  margin-right: 57%;
+}
+
+.open-p-tag {
+  margin-right: 60%;
+}
+
+.mid-level-p-tag {
+  margin-right: 56%;
+}
+
+.salary-p-tag {
+  margin-right: 53%;
+}
+
+/*-------------------contact info stylings----------------*/
+
+.contact-info-section {
+  grid-area: 4 / 3 / 5 / 4;
+  background-color: #EAF0F5;
+  height: 90%;
+  width: 80%;
+  margin: 7.9% 45% 0% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.contact-info-section section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.contact-info-section button {
+    height: 6.6vh;
+    margin-bottom: 6%;
+}
+
+.facebook-button {
+  background-color: #405993;
+  color: #FEFEFF;
+  background-image: url('images/facebook.svg');
+  background-size: ;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.twitter-button {
+  background-color: #49A0EB;
+  color: #FEFEFF;
+}
+
+.linkedin-button {
+  background-color: #3076B0;
+  color: #FEFEFF;
+}
+
