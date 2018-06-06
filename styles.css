@@ -673,7 +673,7 @@ text {
 
   body  {
     grid-template: 2% 5% 25% 43% 20% / 15% 55% 30%;
-    width: 110vw;
+    width: 106vw;
   }
 
   .tab-nav-section h1 {
@@ -692,6 +692,8 @@ text {
 
   .donut-charts-area {
     width: 100%;
+    /*display: flex;
+    flex-direction: column;*/
   }
 
   .graph-image-section .graph-area img {
@@ -750,6 +752,13 @@ text {
 
   .contact-info-section {
     height: 216%;
+  }
+}
+
+@media screen and (max-width: 337px) {
+
+  body {
+    width: 113vw;
   }
 }
 
