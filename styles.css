@@ -579,7 +579,7 @@ text {
 
   .graph-image-section .graph-area img {
     width: 100%;
-    height: 100%;
+    height: 74%;
   }
 
   .donut-charts-area {
@@ -721,8 +721,8 @@ text {
   .graph-image-section .graph-area img {
     width: 104vw;
     position: absolute;
-    top: 40rem;
-    height: 40%;
+    top: 50rem;
+    height: 37%  
   }
 
   .tab-nav-section h1 {
@@ -757,7 +757,7 @@ text {
   }
 
   .contact-info-section {
-    height: 480%;
+    height: 350%;
   }
 
   .donut {
@@ -771,9 +771,17 @@ text {
 
 @media screen and (max-width: 337px) {
 
+  body {
+    grid-template: 2% 5% 40% 33% 15% / 15% 55% 30%;
+  }
+
   .graph-image-section .graph-area img {
-    top: 38rem;
-  }  
+    top: 46rem;
+  } 
+
+  .contact-info-section {
+    height: 250%;
+  } 
 }
 
 @media screen and (max-height: 668px) {
