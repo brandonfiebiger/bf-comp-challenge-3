@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  width: 100vw;
   height: 220vh;
   display: grid;
   grid-template: 4% 13% 23% 60% / 15% 55% 30%;
@@ -322,10 +322,6 @@ text {
   flex-direction: row;
 }
 
-.job-section ul {
-  /*width: 100%;*/
-}
-
 .job-section button {
   margin-left: 2rem;
   font-size: 1rem;
@@ -480,8 +476,8 @@ text {
 
 .down-arrow {
   position: absolute;
-  bottom: 7.5rem;
-  right: 1rem;
+  bottom: 5rem;
+  right: 1.5rem;
   width: 81%;
   height: 1rem;
   padding: 0;
@@ -633,14 +629,13 @@ text {
   }
 
   .moby-p-tag {
-    /*margin-left: 20rem;*/
     justify-content: center;
   }
 
   .contact-info-section {
     grid-area: 5 / 1 / 6 / 4;
     background-color: #EAF0F5;
-    height: 215%;
+    height: 212%;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -672,8 +667,7 @@ text {
 @media screen and (max-width: 675px) {
 
   body  {
-    grid-template: 2% 5% 25% 43% 20% / 15% 55% 30%;
-    width: 110vw;
+    grid-template: 2% 5% 35% 43% 10% / 15% 55% 30%;
   }
 
   .tab-nav-section h1 {
@@ -698,6 +692,10 @@ text {
     width: 80vw;
   }
 
+  .contact-info-section {
+    height: 495%;
+  }
+
   .contact-info-section button {
     height: 3rem;
   }
@@ -714,9 +712,17 @@ text {
 
 @media screen and (max-width: 425px) {
 
+  body {
+    grid-template: 2% 5% 45% 33% 10% / 15% 55% 30%;
+    height: 250vh;
+    margin: 0;
+  }
+
   .graph-image-section .graph-area img {
     width: 104vw;
-
+    position: absolute;
+    top: 40rem;
+    height: 40%;
   }
 
   .tab-nav-section h1 {
@@ -726,14 +732,12 @@ text {
 
   .tab-nav-section p {
     padding-left: 10%;
+    font-size: .70rem;
   }
 
-}
-
-@media screen and (max-width: 413px) {
-
-  body {
-    margin: 0;
+  .donut-charts-area {
+    display: flex;
+    flex-direction: column;
   }
 
   .tab-nav-section {
@@ -744,24 +748,51 @@ text {
     width: 100%;
   }
 
+  .job-section hr {
+    padding-left: 1rem;
+  }
+
   .contact-info-section button {
     height: 2.6rem;
   }
 
   .contact-info-section {
-    height: 216%;
+    height: 480%;
   }
+
+  .donut {
+    width: 95%;
+  }
+
+  .description-section p {
+    font-size: .68rem;
+  }
+}
+
+@media screen and (max-width: 337px) {
+
+  .graph-image-section .graph-area img {
+    top: 38rem;
+  }  
 }
 
 @media screen and (max-height: 668px) {
   .contact-info-section {
-    height: 298%;
+    height: 828%;
   }
-    
-    body  {
-    grid-template: 2% 6% 24% 43% 20% / 15% 55% 30%;
-    width: 110vw;
+  
+  body  {
+  grid-template: 2% 6% 37% 43% 7% / 15% 55% 30%;
+}
+
+  .graph-image-section .graph-area img {
+  top: 28rem;
+}  
+
+  .donut {
+    z-index: 1;
   }
+
 }
 
 
